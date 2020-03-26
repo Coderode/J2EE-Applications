@@ -1,0 +1,3 @@
+Q: write a j2ee app to track the visits of the client if client is visiting for the first time, the server will give a welcome message as "welcome, you are the first time visitor" and it adds a cookie to the client. if a client visits for the second time or onwards, the server will recognize and tell "welcome back!".
+
+search cookie in browser by name localhost>>dcsjmi2020

@@ -1,0 +1,13 @@
+<web-app>
+	<servlet>
+		<servlet-name>factorial</servlet-name>
+		<servlet-class>Factorial</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>factorial</servlet-name>
+		<url-pattern>/fact</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>  
+		<welcome-file>factorial.html</welcome-file>  
+	</welcome-file-list>  
+</web-app>

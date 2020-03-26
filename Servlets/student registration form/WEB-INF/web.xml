@@ -1,0 +1,21 @@
+<web-app>
+	<servlet>
+		<servlet-name>registration</servlet-name>
+		<servlet-class>StudentRegistration</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>registration</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+</web-app>
+
+<web-app>
+	<servlet>
+		<servlet-name>formattedPrint</servlet-name>
+		<servlet-class>PrintPdf</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>formattedPrint</servlet-name>
+		<url-pattern>/printfile</url-pattern>
+	</servlet-mapping>
+</web-app>

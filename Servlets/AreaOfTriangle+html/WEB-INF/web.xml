@@ -1,0 +1,10 @@
+<web-app>
+	<servlet>
+		<servlet-name>triangleArea</servlet-name>
+		<servlet-class>Triangle</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>triangleArea</servlet-name>
+		<url-pattern>/calculateArea</url-pattern>
+	</servlet-mapping>
+</web-app>

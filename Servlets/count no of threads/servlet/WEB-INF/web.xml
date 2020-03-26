@@ -1,0 +1,10 @@
+<web-app>
+	<servlet>
+		<servlet-name>webthreads</servlet-name>
+		<servlet-class>CountThreadsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>webthreads</servlet-name>
+		<url-pattern>/threads</url-pattern>
+	</servlet-mapping>
+</web-app>

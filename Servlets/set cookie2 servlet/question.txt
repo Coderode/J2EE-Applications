@@ -1,0 +1,9 @@
+Q: write a j2ee app to track the visits of the client.
+count page hits of each user for a website using cookies.
+
+search cookie in browser by name localhost>>jmi2020
+
+cookies are stored by domain name in the browser.
+one cookie set one key and value pair
+e.g. for username & password >>we have to add two cookies.
+it will be stored in the browser by domain name >> username & password will be there

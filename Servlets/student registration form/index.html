@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link href="css/bootstrap.min.css" rel="stylesheet">
+        <title>Registration2020</title>
+        <style>
+            #box{
+                border:1px solid #1106ac;
+/*                height:500px;*/
+                border-radius:20px;
+                margin-top:20px;
+            }
+            #heading{
+                color:white;
+                background-color:#9f13d1;
+                text-align:center;
+                padding:2px;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                margin-bottom:20px;
+            }
+            #registrationform{
+                margin:20px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div id="box">
+                <form id="registrationform" action="register" method="post">
+                    <div id="heading"><h1>Placement Registration Form 2020</h1>
+                    </div>
+                    <div id="section1">
+                        <p><span style="background-color:#cd71ee; padding:10px; color:white; font-size:18px; margin-bottom:30px;">Personal Details...</span></p><br>
+                        <div class="form-group">
+                            <label for="firstname">First Name:</label>
+                            <input type="text" placeholder="Enter First Name" class="form-control" name="firstname" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="middlename">Middle Name:</label>
+                            <input type="text" placeholder="Enter Middle Name" class="form-control" name="middlename">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname">Last Name:</label>
+                            <input type="text" placeholder="Enter Last Name" class="form-control" name="lastname">
+                        </div>
+                        <div class="form-group">
+                            <label for="fathername">Father's Name:</label>
+                            <input type="text" placeholder="Enter Father's Name" class="form-control" name="fathername" required>
+                        </div>
+                        <label>Gender: </label>
+                        <div class="radio-inline">
+                            <input type="radio" name="gender" value="male">
+                            <label for="gender">male</label>
+                        </div>
+                        <div class="radio-inline">
+                            <input type="radio" name="gender" value="female">
+                            <label for="gender">female</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="dob">Date of Birth:</label>
+                            <input type="date" name="dob" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address:</label>
+                            <input type="email" name="email" class="form-control" placeholder="Enter email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Mobile No.:</label>
+                            <input type="tel" name="phone" class="form-control" placeholder="Enter mobile no" required>
+                        </div>
+                    </div><hr>
+                    <div id="section2">
+                        <p><span style="background-color:#cd71ee; padding:10px; color:white; font-size:18px;">Academic Details...</span></p><br>
+                        <div class="form-group">
+                            <label for="tenthmarks">Class 10th:</label>
+                            <input type="number" placeholder="10th percentage" step="0.01" min="0" max="100" class="form-control" name="tenthmarks" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="twelthmarks">Class 12th:</label>
+                            <input type="number" placeholder="12th percentage" step="0.01" min="0" max="100" class="form-control" name="twelthmarks" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="gradmarks">Graduation:</label>
+                            <input type="number" placeholder="Percentage" step="0.01" min="0" max="100" class="form-control" name="gradmarks" required>
+                        </div>
+                    </div><hr>
+                    <div id="section3">
+                        <p><span style="background-color:#cd71ee; padding:10px; color:white; font-size:18px;">Work Experience...</span></p><br>
+                        <div class="form-group">
+                            <label for="compname">Name of company:</label>
+                            <input type="text" placeholder="Company name" class="form-control" name="compname">
+                        </div>
+                        <div class="form-group">
+                            <label for="duration">Duration:</label>
+                            <input type="number" placeholder="Duration" class="form-control" name="duration">
+                        </div>
+                        <div class="form-group">
+                            <label for="designation"> Designation:</label>
+                            <input type="text" placeholder="Designation" class="form-control" name="designation">
+                        </div>
+                        <div class="form-group">
+                            <label for="description"> Work description:</label>
+                            <textarea class="form-control" name="description" rows="3" id="description"></textarea>
+                        </div>
+                    </div><hr>
+                    <input type="submit" class="btn btn-lg btn-success pull-right" value="Register"> 
+                    <input type="reset" class="btn btn-lg btn-danger" value="Reset">
+                </form>
+            </div>
+        </div>
+        <br><br>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
