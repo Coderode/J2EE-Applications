@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link href="css/bootstrap.min.css" rel="stylesheet">
+        <title>Delete Account</title>
+        <style>
+            #box{
+                border:1px solid lightgrey;
+                border-radius:10px;
+                margin:20px;
+                margin-top:100px;
+                padding:20px;
+                background-color:whitesmoke;
+            }
+            #head{
+                font-size:20px;
+                padding:10px;
+                color:midnightblue;
+                text-align: center;
+                border-radius:10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 col-xs-6 col-xs-offset-3">
+                    <div id="box">
+                        <div id="head">
+                            <strong>Enter email to delete Account</strong>
+                        </div>
+                        <hr><br><br>
+                        <form id="loginform" action="delete.php" method="post">
+                            <div class="form-group">
+                                <label for="email" class="sr-only">Enter Email:</label>
+                                <input  class="form-control" type="email" name="email" placeholder="Enter email" required autofocus>
+                            </div>
+                            <br><br>
+                            <input class="btn btn-lg btn-primary btn-block" type="submit" name="delete" value="Delete">
+                        </form>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </body>
+</html>
