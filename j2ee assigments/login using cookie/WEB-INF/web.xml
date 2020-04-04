@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<web-app>
+	<servlet>
+		<servlet-name>logincookie</servlet-name>
+		<servlet-class>LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>logincookie</servlet-name>
+		<url-pattern>/logindirect</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>loginformcookie</servlet-name>
+		<servlet-class>LoginFormServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>loginformcookie</servlet-name>
+		<url-pattern>/loginform</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>logout</servlet-name>
+		<servlet-class>LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>logout</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+</web-app>
