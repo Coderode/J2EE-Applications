@@ -24,7 +24,7 @@ public class WebThreadCreator
 { 
     public static void main(String[] args) 
     { 
-        int n = 1; // Number of threads 
+        int n = 5; // Number of threads 
         for (int i=0; i<n; i++) 
         { 
             MultithreadingDemo object = new MultithreadingDemo(); 
