@@ -1,0 +1,1 @@
+Write a J2EE Program which takes personal details (Name, Age, Sex, DoB, Address, etc), academic details (Schools, College, University, etc) and Experience details as input through a well-designed web-form. On the submission of this form, a servlet is invoked which formats and displays these information in a tabular/printable form.
