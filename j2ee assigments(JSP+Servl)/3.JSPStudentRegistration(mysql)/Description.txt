@@ -1,0 +1,52 @@
+Question : Write a complete JSP program for student examination processing. Assure that entire student examination data is stored in some database tables. Give option to enter students marks in different papers (only admin can do it), generate result report (student can access it without login). Any update to the examination system must be carried out by the Admin who need valid username and password. Make necessary assumption, if required.
+
+Assumptions:
+	-there exist only two admins in admin table who controls for editing
+	-username & password will for their account will be provided to them manually don't need registration for them here
+	1.username: admin001 password : adminpass
+	2.username: admin002 password : adminpass
+
+
+Directory Structure:
+MainDir/
+	WEB-INF/lib/mysql-connector-java-8.0.19
+	index.jsp
+	otherfiles.jsp
+
+Database used : MySQL
+database : j2ee_jsp_assignment3
+tables:
+1.admin (id,name,username,password)
+2.student (id,name,email,phone,address)
+3.marks(id,paper1,paper2,paper3,paper4,paper5)
+
+
+
+for database connection changes go to : connection.jsp
+
+***I have included exported file as j2ee_jsp_assignment3.sql of the database
+
+Description of working of the app:
+----------------------------------------------------------------------------
+on index.jsp :
+
+for students:
+	-can see the result by providing Name and studentid without login
+	
+for admin:
+	-login and logout options available (login by providing username and password)
+	-login process by matching username & password from database table admin (create session for admin if login success)
+	-after login go the adminPage
+	-options for admin after login	
+		-viewall: 
+			-can view all details of all student
+		-Edit marks: 
+			-ask for student name and id
+			-then provide info about that student with option to edit / enter marks (if marks not given while adding new student)
+			-update the data in marks table
+		-add new student: 
+			-form to add new student with all details (marks at that time can be empty)
+				-check for student id already exist or not (if not then add else show error)
+				-student and marks table will be updated
+		-logout 
+			-invalidate the session and send back to index.jsp (home page)
