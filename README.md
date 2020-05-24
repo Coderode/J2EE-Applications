@@ -10,6 +10,7 @@
 ## Requirements
 * jdk 1.8.241
 * tomcat 8.5
+* mysql-connector-java-8.0.19.jar
     
 ##### Used Tomcat server to run these programs and mysql using XAMPP.
 
