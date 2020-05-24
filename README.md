@@ -7,6 +7,9 @@
 * html forms
 * user request and server response.
 * etc.
+## Requirements
+* jdk 1.8.241
+* tomcat 8.5
     
 ##### Used Tomcat server to run these programs and mysql using XAMPP.
 
